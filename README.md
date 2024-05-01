@@ -1,5 +1,5 @@
 Personal website. 
 
-Deployed with GitHub pages.
+Hosted on GitHub pages.
 
-pintoza.github.io/
+https://nehadhull11.github.io

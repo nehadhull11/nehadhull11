@@ -3,90 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ndfavicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="ndfavicon.ico" type="image/x-icon" />
     <title>Neha Dhull</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f6e9ff;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
+            position: relative;
         }
         .header {
-            font-size: 24pt;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 42pt;
             font-weight: bold;
-            margin-top: 40px;
-        }
-        .subtitle {
-            font-size: 16pt;
-            color: #8b01f1;
-            margin-bottom: 20px;
         }
         .categories {
+            position: absolute;
+            top: 160px; /* Default top value */
             display: flex;
-            justify-content: space-around;
-            margin: 0 auto;
-            width: 70%;
-        }
-        .category {
-            margin-top: 30px;
-            line-height: 130%;
-            font-size: 18pt; /* Larger font size for desktop */
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
         }
         .category a {
+            min-width: 250px;
             text-decoration: none;
-            display: block; /* Stack buttons vertically */
-            margin-bottom: 5px;
-            padding: 5px 15px;
+            display: block;
+            padding: 15px 15px;
+            font-size: 20pt;
             border-radius: 5px;
-            background-color: #ffdab9; /* Default background color */
-            color: #8b01f1; /* Text color */
+            color: white;
             text-align: center;
-            width: 200px; /* Fixed width to ensure uniformity */
-            margin: 10px auto; /* Center align the buttons */
+            width: 220px;
+            margin: 10px auto;
+            background-color: #007BFF;
         }
-
+        .category a:first-child {
+            background-color: #ff1495;
+        }
         .category a:hover {
-            background-color: #ff6600;
-            text-decoration: none;
+            filter: brightness(120%);
         }
 
-        .category:nth-child(1) a { /* PROJECTS category */
-            background-color: #ffdab9; /* Different color for PROJECTS */
-        }
-
-        .category:nth-child(2) a { /* PROFESSIONAL category */
-            background-color: #ffdab9; /* Different color for PROFESSIONAL */
-        }
-        .thought {
-            font-size: 10pt;
-            text-decoration: none;
-            color: inherit;
-        }
-
-        @media screen and (max-width: 768px) {
+        /* Mobile screens */
+        @media (max-width: 768px) {
             .categories {
-                flex-direction: column;
-                width: 90%;
+                top: 50%;
+                transform: translateY(-50%);
             }
-            .category {
-                margin-top: 20px;
-                font-size: 16pt; /* Smaller font size for mobile */
+            .header {
+                font-size: 32pt;
+                top: 12%;
+                width: 100%;
+            }
+        }
+        /* Laptop screens */
+        @media (min-width: 769px) and (max-width: 1300px) {
+            .categories {
+                top: 150px; /* Adjusted top value for laptop screens */
+            }
+        }
+
+        /* Larger monitors */
+        @media (min-width: 1301px) {
+            .categories {
+                top: 200px;
             }
         }
     </style>
 </head>
 <body>
     <div class="header">Neha Dhull</div>
-    <div class="subtitle">
-        Welcome to my site!
-    </div>
-
     <div class="categories">
         <div class="category">
-            PROFESSIONAL:
-            <a href="professional/research.html">Research</a>
+            <a href="projects/projects.html">Projects</a>
             <a href="https://www.linkedin.com/in/neha-dhull-234360178/">LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=_oXUSeQAAAAJ&hl=en">Google Scholar</a>
-            <a href="professional/about.html">About</a>
+            <a href="https://github.com/nehadhull11">GitHub</a>
+            <a href="about.html">About</a>
         </div>
     </div>
 </body>
