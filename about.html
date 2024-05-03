@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="ndfavicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="ndfavicon.ico" type="image/x-icon" />
+    <title>About</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .about {
+            width: 50%;
+            margin: 0px auto; /* Center and give some top margin */
+            font-size: 14pt;
+            text-align: left;
+            padding: 60px;
+            position: relative; /* Needed for absolute positioning inside */
+        }
+        .home-button {
+            text-decoration: none;
+            font-size: 16pt;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            position: absolute; /* Position it relative to 'about' */
+            top: 20px; /* Adjust this value as needed to align with 'About' */
+            left: 50%; /* Center horizontally */
+            transform: translateX(-50%); /* Adjust horizontally to truly center */
+        }
+        .home-button:hover {
+            filter: brightness(120%);
+        }
+        .bold-section {
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 500px) {
+            .about {
+                width: 80%; /* Wider text for mobile */
+                padding: 60px;
+            }
+        }
+        /* Laptop screens */
+        @media (min-width: 769px) and (max-width: 1500px) {
+            .about {
+                width: 50%; /* Adjusted top value for laptop screens */
+            }
+        }
+        @media (min-width: 1501px) {
+            .about {
+                font-size: 20px;
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="about">
+    <a href="index.html" class="home-button">Home</a>
+    <h2></h2>
+    <div class="bold-section">
+        <b><i>Professional:</i></b>
+    </div>
+    <p>
+        I am currently a PhD candidate at Rensselaer Polytechnic Institute,
+        where I work on magnetic characterizations of layered 2D ferromagnetic materials under the supervision of
+        Gwo-Ching Wang.
+    </p>
+    <p>
+        For crystal growth: I use Arc-melting & Floating-method.
+        For characterizations, I use MOKE, TEM, XRD, XPS, AFM, SEM techniques.
+    </p>
+    <div class="bold-section">
+        <b><i>Background:</i></b>
+    </div>
+    <p>
+        I completed a Bachelor's degree in Physics with Honors from Delhi University in 2016.
+        After that, I completed a Master's degree in Physics form DRC University of Science and Technology in 2018.
+    </p>
+    <p>
+        After this, I paritipcated in a Solar Phyiscs project at the ISRO, Department of Space in Navrangpura, Ahmedabad.
+    </p>
+    <p>
+        Next, I completed the first part of my PhD at Sungkyunkwan University in South Korea, where I worked on the growth and characterization of 2D materials.
+    </p>
+    <p>
+        Finally, I moved to the United States to complete the rest of my PhD at Rensselaer Polytechnic Institute. I expect to graduate in the spring of 2025.
+    </p>
+    <div class="bold-section">
+        <b><i>Other Interests:</i></b>
+    </div>
+    <ul style="line-height: 1.5;">
+        <li>Cooking</li>
+        <li>Reading</li>
+        <li>Walking around</li>
+    </ul>
+</div>
+
+</body>
+</html>
